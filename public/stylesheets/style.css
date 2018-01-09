@@ -1,4 +1,10 @@
-html, body {
+@media only screen and (max-width: 480px), only screen and (max-device-width: 800px) {
+  .about-wrapper{
+    font-size: 20px;
+  }
+}
+html{font-size: 100%;}
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -50,6 +56,10 @@ h3{
 }
 .about-wrapper{
   overflow: scroll;
+}
+
+.about-wrapper{
+
 }
 
 .about-wrapper::after{
@@ -439,11 +449,16 @@ svg {
   position: absolute;
 }
 
-:global .shop-link:after{
+:global .menu .shop-link:after{
   content: 'Coming Soon!';
   font-size: 0.5em;
   display: block;
   margin-left: -25px;
   margin-top: 9px;
   position: absolute;
+}
+
+.bm-item-list .shop-link:after{
+  content:'';
+  width: 0;
 }
