@@ -111,6 +111,21 @@ h3{
   float: right;
 }
 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .desc{
+      font-size: 1.5em;
+    }
+    .about-picture{
+      display: none;
+    }
+    .slick-slider .arrow{
+      display: none;
+    }
+}
+
 .desc-paragraph{
   font-family: 'Crimson Text', serif;
   letter-spacing: 0.02em;

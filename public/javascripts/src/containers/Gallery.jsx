@@ -14,7 +14,7 @@ class Gallery extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       nextArrow: <Arrow key="5" direction="right" />,
-    prevArrow: <Arrow key="6" direction="left" />,
+      prevArrow: <Arrow key="6" direction="left" />,
     };
     return(
       <ReactCSSTransitionGroup
